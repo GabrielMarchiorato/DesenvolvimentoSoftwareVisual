@@ -7,6 +7,8 @@ Content-Type: application/json
     "Preco": 3.5
 }
 
-###
-GET https://localhost:5001/api/produto/create
+### Listar todos os produtos
+GET https://localhost:5001/api/produto/list
 
+### Buscar produto pelo id
+GET https://localhost:5001/api/produto/getbyid/1

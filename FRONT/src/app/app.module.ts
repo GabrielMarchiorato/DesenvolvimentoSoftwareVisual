@@ -3,15 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from "@angular/common/http"
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProdutoCadastrarComponent } from './components/views/produto/produto-cadastrar/produto-cadastrar.component';
+import { ProdutoListarComponent } from './components/views/produto/produto-listar/produto-listar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProdutoCadastrarComponent,
+    ProdutoListarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

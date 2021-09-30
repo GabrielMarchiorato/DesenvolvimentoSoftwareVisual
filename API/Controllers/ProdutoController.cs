@@ -69,5 +69,15 @@ namespace API.Controllers
             return Ok(_context.Produtos.ToList());
         }
 
+        //PUT: api/produto/update
+        [HttpPut]
+        [Route("update")]
+        public IActionResult Update([FromBody] Produto produto)
+        {
+            _context.Produtos.Update(produto);
+            _context.SaveChanges();
+            return Ok(produto);
+        }
+
     }
 }
